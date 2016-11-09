@@ -1,0 +1,17 @@
+<Alloy>
+	  <!-- <NavigationWindow class="navigationWindow" platform="ios"> -->
+	<Window class="container" layout="vertical" >
+		<!-- <Label id="label" onClick="doClick">Hello, World! 123</Label> -->
+		<!-- <Label text="\uf2c0" class="ram"></Label> -->
+		<!-- <Label class="falabel"  text="\uf2c0"></Label> -->
+		<View class="viewhead1">
+			<Label class="header">User Account</Label></View>
+	<Button   onClick="openLogin" class="button">Login</Button>
+		<Button   onClick="openRegister" class="button">Register</Button>
+
+
+
+		  <!-- <View backgroundColor="pink" height="10" borderWidth="0.5" borderColor="brown"/> -->
+	</Window>
+	<!-- </NavigationWindow> -->
+</Alloy>

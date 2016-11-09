@@ -1,0 +1,19 @@
+
+
+
+
+".container": {	backgroundImage:"imgpsh_fullsize.png",
+  layout: "vertical" ,
+  top: Alloy.Globals.winTop},
+"#itemName" :{
+  height: Ti.UI.SIZE,
+  left: 0
+},
+"#rowId":{
+  height: Ti.UI.SIZE,
+  left: 0
+}
+"#closebtn":{
+  height: Ti.UI.SIZE,
+  width: Ti.UI.SIZE
+}

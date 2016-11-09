@@ -1,0 +1,19 @@
+<Alloy>
+	<Window class="container" id="win">
+    <Label id="first_name"></Label>
+		<Label id="last_name"></Label>
+    	<Label id="email_id"></Label>
+      <Label id="password"></Label>
+      	<Label id="conform_password"></Label>
+				<Label id="phone_no"></Label>
+
+			<Button id="closebtn1" onClick="closeme1">Close Me</Button>
+
+
+
+
+
+
+
+	</Window>
+</Alloy>

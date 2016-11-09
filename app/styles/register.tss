@@ -1,0 +1,72 @@
+
+".container": {	backgroundImage:"imgpsh_fullsize.png",
+//showVerticalScrollIndicator:true,
+//scrollable :true,
+//DEFAULT : "10",
+	top: Alloy.Globals.winTop},
+
+
+".view123":{
+borderColor:"black" ,
+left:"100px",
+ top:"40px",
+  right:"100px",
+   height:"40",
+   fontWeight: "5"
+}
+
+
+".viewhead":{
+borderColor:"black" ,
+ top:"40px",
+   height:"40",
+
+}
+".falabel": {
+	font: {
+		fontFamily: 'FontAwesome',
+    height:"48px",
+    width: "48px",
+
+	},
+  left:"10",
+  color:"white"
+
+}
+
+".radio1": {
+	font: {
+		fontFamily: 'FontAwesome',
+    height:"48px",
+    width: "48px",
+    fontSize: "15",
+
+	},
+  top:"40px",
+  left:"30px",
+  color:"white"
+
+}
+".radio2": {
+	font: {
+		fontFamily: 'FontAwesome',
+    height:"48px",
+    width: "48px",
+    top:"20px"
+	},
+
+  color:"white"
+
+}
+
+
+".textField123": {
+  fontSize: "180px",
+color:"white" ,
+ top:"10" ,
+  left:"30" ,
+   width:"350" ,
+
+
+   hintTextColor:"aqua"
+    },

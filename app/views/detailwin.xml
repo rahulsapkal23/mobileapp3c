@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container" id="win">
+    <Label id="user_name"></Label>
+		<Label id="password"></Label>
+			<Button id="closebtn" onClick="closeme">Close Me</Button>
+
+	</Window>
+</Alloy>

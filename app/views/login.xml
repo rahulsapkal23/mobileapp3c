@@ -1,0 +1,22 @@
+<Alloy>
+	<Window  id="win" class="container" layout="vertical" >
+     <!-- <TextField class="textField"/> -->
+<View backgroundColor="green" height="25">
+	<Label id="label" >Assignment</Label></View>
+	<View class="view123">
+		<Label class="falabel"  text="\uf007"></Label>
+		<!-- <View class="fa fa-user-o" aria-hidden="true"></View> -->
+		<!-- <Label text="\uf2c0" class="ram"></Label> -->
+		 <!-- <Label id="label" class="sap"></Label> -->
+       <TextField class="textField123" id="user_name" value="please enter user name" onClick="cleartext"/>
+</View>
+	<View class="view123">
+			<Label class="falabel"  text="\uf007"></Label>
+			   <TextField class="textField123" id="password"
+            value="please enter password" onClick="cleartext"/>
+</View>
+			<Button id="login_button" onClick="check_login">Login</Button>
+      <Button id="back" onClick="goto_back">Back</Button>
+
+	</Window>
+</Alloy>

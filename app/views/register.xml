@@ -1,0 +1,90 @@
+<Alloy>
+	<Window  id="win" class="container" layout="vertical" >
+     <!-- <TextField class="textField"/> -->
+		 <ScrollView layout="vertical">
+			 	<View class="viewhead">
+						<Label class="falabel" id="back" onClick="goto_back" text="\uf053"></Label>
+					<Label color="white">Assignment</Label></View>
+		 	<View class="view123">
+				<Label class="falabel"  text="\uf007"></Label>
+       <TextField id="first_name" class="textField123"
+          hintText="please enter first name" />
+</View>
+	<View class="view123">
+		<Label class="falabel"  text="\uf007"></Label>
+				 <TextField id="last_name" class="textField123"
+           hintText="please enter last name" />
+</View>
+	<View class="view123">
+		<Label class="falabel"  text="\uf0e0"></Label>
+				   <TextField id="email_id" class="textField123"
+             hintText="please enter email_id" />
+</View>
+	<View class="view123">
+		<Label class="falabel"  text="\uf13e"></Label>
+					   <TextField id="password" class="textField123"
+               hintText="please enter password" />
+</View>
+	<View class="view123">
+		<Label class="falabel"  text="\uf13e"></Label>
+						   <TextField id="conform_password" class="textField123"
+                 hintText="please Re-enter password" />
+</View>
+
+	<View class="view123">
+		<Label class="falabel"  text="\uf10b"></Label>
+						   <TextField id="phone_no" class="textField123"
+                 hintText="please enter phone_no" />
+</View>
+<View class="view123">
+	<Label class="falabel"  text="\uf1fd"></Label>
+						 <TextField id="dob" class="textField123"
+							 hintText="please enter Birthday" />
+							 <Picker id="picker" top="50" type="Ti.UI.PICKER_TYPE_DATE"
+			minDate= "2013-02-08 09:30:26 Z"
+			maxDate="2015,11,17">
+			<!-- the value (selected date) is being set in the TSS -->
+		</Picker>
+</View>
+<View class="view123" layout="horizontal">
+	<Label class="radio1">Gender:</Label>
+	<Label class="radio1"  onClick="clickMale" id="male" text="\uf1db"></Label>
+<Label class="radio1" >Male</Label>
+	<Label class="radio1"  onClick="clickFemale" id="female" text="\uf1db"></Label>
+<Label class="radio1">Female</Label>
+</View>
+<View class="view123">
+	<Label class="falabel"  text="\uf024"></Label>
+						 <TextField id="country" class="textField123"
+							 hintText="please enter country" />
+</View>
+<View class="view123">
+	<Label class="falabel"  text="\uf17a"></Label>
+						 <TextField id="state" class="textField123"
+							 hintText="please enter state" />
+</View>
+<View class="view123">
+	<Label class="falabel"  text="\uf007"></Label>
+						 <TextField id="city" class="textField123"
+							 hintText="please enter city" />
+</View>
+<View class="view123">
+	<Label class="falabel"  text="\uf292"></Label>
+						 <TextField id="zipcode" class="textField123"
+							 hintText="please enter zipcode" />
+</View>
+<View class="view123">
+	<Label class="falabel"  text="\uf041"></Label>
+						 <TextField id="add1" class="textField123"
+							 hintText="please enter Address line 1" />
+</View>
+<View class="view123">
+	<Label class="falabel"  text="\uf041"></Label>
+						 <TextField id="add2" class="textField123"
+							 hintText="please enter Address line 2" />
+</View>
+			<Button id="register_button" onClick="check_Register">Register</Button>
+  <!-- <Button id="back" onClick="goto_back">Back</Button> -->
+</ScrollView>
+	</Window>
+</Alloy>

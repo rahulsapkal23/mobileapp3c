@@ -1,0 +1,11 @@
+
+
+
+
+".container": {	backgroundImage:"imgpsh_fullsize.png",
+  layout: "vertical" ,
+  top: Alloy.Globals.winTop},
+"Label" :{
+  height: Ti.UI.SIZE,
+  left: 0
+},

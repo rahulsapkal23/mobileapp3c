@@ -1,0 +1,37 @@
+
+
+
+
+
+".container": {	backgroundImage:"imgpsh_fullsize.png",	top: Alloy.Globals.winTop},
+
+
+".button": {
+		top:"10" ,
+		width:"880px" ,
+		 height:"144px" ,
+		  borderRadius :"20px" ,
+			color:"red" ,
+			 size:"160px" ,
+			 backgroundColor:"white",
+	font: {
+	fontSize: "30px",
+	fontWeight: "15px"
+	}
+}
+
+
+".header": {
+	color: "red",
+font: {
+fontSize: "30px",
+fontWeight: "15px"
+}
+}
+
+".viewhead1": {
+	backgroundColor:"green",
+	height:"60",
+
+
+	}
