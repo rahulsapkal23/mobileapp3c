@@ -1,20 +1,20 @@
 <Alloy>
 	<Window  id="win" class="container" layout="vertical" >
-     <!-- <TextField class="textField"/> -->
 		 <ScrollView layout="vertical">
 			 	<View class="viewhead">
 						<Label class="falabel" id="back" onClick="goto_back" text="\uf053"></Label>
-					<Label color="white">Assignment</Label></View>
-		 	<View class="view123">
-				<Label class="falabel"  text="\uf007"></Label>
-       <TextField id="first_name" class="textField123"
-          hintText="please enter first name" />
-</View>
-	<View class="view123">
-		<Label class="falabel"  text="\uf007"></Label>
-				 <TextField id="last_name" class="textField123"
-           hintText="please enter last name" />
-</View>
+					<Label color="white">Assignment</Label>
+				</View>
+		 		<View class="view123">
+								<Label class="falabel"  text="\uf007"></Label>
+       					<TextField id="first_name" class="textField123"
+          					hintText="please enter first name" />
+				</View>
+				<View class="view123">
+								<Label class="falabel"  text="\uf007"></Label>
+				 				<TextField id="last_name" class="textField123"
+           					hintText="please enter last name" />
+				</View>
 	<View class="view123">
 		<Label class="falabel"  text="\uf0e0"></Label>
 				   <TextField id="email_id" class="textField123"
@@ -38,13 +38,13 @@
 </View>
 <View class="view123">
 	<Label class="falabel"  text="\uf1fd"></Label>
-						 <TextField id="dob" class="textField123"
-							  onClick="datepicker_on" />
+						 <TextField id="dob" class="textField123"  />
+
 							 <Picker id="picker" left="28"
-												 onChange="report" backgroundColor="transparent"
+												 backgroundColor="transparent"
 												 type="Titanium.UI.PICKER_TYPE_DATE" opacity="0.75"
-												 maxDate="May 1, 2014 "
-												 value="2014-04-15">
+												 maxDate="November 10, 2016 "
+												 value="2016-11-10">
 											 </Picker>
 </View>
 <View class="view123" layout="horizontal">
@@ -84,8 +84,9 @@
 						 <TextField id="add2" class="textField123"
 							 hintText="please enter Address line 2" />
 </View>
-			<Button id="register_button" onClick="check_Register">Register</Button>
-  <!-- <Button id="back" onClick="goto_back">Back</Button> -->
+			<!-- <Button id="register_button" onClick="check_Register">Register</Button> -->
+			<Button   onClick="check_Register" class="button">Register</Button>
+
 </ScrollView>
 	</Window>
 </Alloy>

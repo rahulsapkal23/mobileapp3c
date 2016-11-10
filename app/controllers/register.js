@@ -26,6 +26,9 @@ function check_Register(e) {
     itemName:"ram"*/
 
   }
+  var emailRE = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}/;
+  var mobRE = /^\d{10}$/;
+  var passwordRE = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]){6,16}/;
   if($.first_name.value=="")
   {
     Ti.API.info("first name");
@@ -36,21 +39,21 @@ function check_Register(e) {
     Ti.API.info("last name");
     alert("please fill last name");
   }
-  else if ($.email_id.value=="") {
+  else if (emailRE.test($.email_id.value)==false) {
     Ti.API.info("email_id");
-    alert("please fill email_id");
+    alert("Invalid email_id");
   }
-  else if ($.password.value=="") {
+  else if (passwordRE.test($.password.value)==false) {
     Ti.API.info("password");
-    alert("please fill password");
+    alert("Password must be 1 lower 1 upper and 1 digit");
   }
-  else if ($.phone_no.value=="") {
+  else if (mobRE.test($.phone_no.value)==false) {
     Ti.API.info("phone_no");
-    alert("please fill phone_no");
+    alert("Phone No must be 10 digits");
   }
-  else if ($.dob.value=="") {
+  else if ($.picker.value=="2016-11-10") {
     Ti.API.info("dob");
-    alert("please fill dob");
+    alert("please fill valid Date of Birth");
   }
   else if ($.country.value=="") {
     Ti.API.info("country");
@@ -124,3 +127,20 @@ function report(e) {
 
 
 }
+
+
+
+/*
+var pattern = /^\d{10}$/;
+
+var pattern = /^\d{6,8}$/;
+
+var pattern = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}/;
+
+var pattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]){6,16}/;
+pattern.test(d)
+
+
+
+
+*/

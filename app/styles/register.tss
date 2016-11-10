@@ -14,8 +14,19 @@ left:"100px",
    height:"40",
    fontWeight: "5"
 }
-"#picker": {
-    value: "December 17, 2013"
+
+".button": {
+		top:"10" ,
+		width:"880px" ,
+		 height:"144px" ,
+		  borderRadius :"20px" ,
+			color:"red" ,
+			 size:"160px" ,
+			 backgroundColor:"white",
+	font: {
+	fontSize: "30px",
+	fontWeight: "15px"
+	}
 }
 
 ".viewhead":{

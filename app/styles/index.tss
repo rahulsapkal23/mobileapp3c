@@ -1,10 +1,5 @@
 
-
-
-
-
 ".container": {	top: Alloy.Globals.winTop},
-
 
 ".button": {
 		top:"10" ,
@@ -21,23 +16,21 @@
 }
 
 
-".header": {
+".header":
+ {
 	color: "red",
-font: {
-fontSize: "30px",
-fontWeight: "15px"
-}
+	font: {
+					fontSize: "30px",
+					fontWeight: "15px"
+				}
 }
 
 ".viewhead1": {
-	backgroundColor:"green",
-	height:"60",
+									backgroundColor:"green",
+									height:"60",
+						}
 
 
-	}
 	".date": {
-
-		height:"60"
-
-
-		}
+								height:"60"
+							}
