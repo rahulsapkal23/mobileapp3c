@@ -9,5 +9,5 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
-Alloy.Globals.winTop = (OS_IOS && parseInt(Ti.Platform.version, 10) >= 7) ? 20 :0;
+Alloy.Globals.winTop = 0;
 //var icons = require('/icons');

@@ -14,7 +14,9 @@ left:"100px",
    height:"40",
    fontWeight: "5"
 }
-
+"#picker": {
+    value: "December 17, 2013"
+}
 
 ".viewhead":{
 borderColor:"black" ,

@@ -110,3 +110,17 @@ function clickFemale() {
 
 
 }
+
+function datepicker_on(e) {
+$.dob.value="";
+  $.picker.opacity="0.75";
+}
+function report(e) {
+    Ti.API.info("fjdhfjdfjsj");
+    Ti.API.info('User selected: ' + e.value);
+    Ti.API.info("1548445");
+      $.dob.value=e.value;
+        $.picker.opacity="0";
+
+
+}

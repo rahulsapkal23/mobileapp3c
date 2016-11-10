@@ -9,6 +9,9 @@
 	<Button   onClick="openLogin" class="button">Login</Button>
 		<Button   onClick="openRegister" class="button">Register</Button>
 
+		
+
+
 
 
 		  <!-- <View backgroundColor="pink" height="10" borderWidth="0.5" borderColor="brown"/> -->

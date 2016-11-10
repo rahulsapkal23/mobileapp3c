@@ -3,7 +3,7 @@
 
 
 
-".container": {	backgroundImage:"imgpsh_fullsize.png",	top: Alloy.Globals.winTop},
+".container": {	top: Alloy.Globals.winTop},
 
 
 ".button": {
@@ -35,3 +35,9 @@ fontWeight: "15px"
 
 
 	}
+	".date": {
+
+		height:"60"
+
+
+		}
