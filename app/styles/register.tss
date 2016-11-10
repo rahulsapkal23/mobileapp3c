@@ -7,14 +7,35 @@
 
 
 ".view123":{
-borderColor:"black" ,
+borderColor:"white" ,
 left:"100px",
  top:"40px",
   right:"100px",
    height:"40",
    fontWeight: "5"
 }
+".opt":{
 
+left:"840px",
+top: "0",
+
+   height:"5",
+	 font: {
+	 fontSize:"1",
+	 fontWeight:"2",
+	 fontStyle: "italic"
+	 },
+	 color: "white"
+
+}
+".checkbox1":{
+borderColor:"white" ,
+left:"100px",
+
+  right:"100px",
+   height:"70",
+   fontWeight: "5"
+}
 ".button": {
 		top:"10" ,
 		width:"880px" ,
@@ -60,6 +81,47 @@ borderColor:"black" ,
   color:"white"
 
 }
+".check": {
+	font: {
+		fontFamily: 'FontAwesome',
+    height:"21px",
+    width: "21px",
+    fontSize: "15",
+
+	},
+  top:"100px",
+  left:"200px",
+  color:"white"
+
+}
+".agree": {
+	font: {
+
+		fontWeight: "20",
+    fontSize: "15"
+
+	},
+  top:"100px",
+  left:"300px",
+  color:"white"
+
+}
+".terms": {
+
+  type: Titanium.UI.ATTRIBUTE_UNDERLINES_STYLE,
+	font: {
+
+		fontWeight: "20",
+    fontSize: "15"
+
+	},
+  top:"100px",
+  left:"460px",
+  color:"white",
+
+
+}
+
 ".radio2": {
 	font: {
 		fontFamily: 'FontAwesome',
@@ -81,5 +143,5 @@ color:"white" ,
    width:"350" ,
 
 
-   hintTextColor:"aqua"
+   hintTextColor:"white"
     },

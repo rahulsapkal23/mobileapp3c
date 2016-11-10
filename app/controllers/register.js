@@ -50,14 +50,23 @@ function check_Register(e) {
   else if (mobRE.test($.phone_no.value)==false) {
     Ti.API.info("phone_no");
     alert("Phone No must be 10 digits");
+   alert($.picker.value);
   }
-  else if ($.picker.value=="2016-11-10") {
+  else if ($.picker.value=="2016-11-09 18:30:00 +0000") {
     Ti.API.info("dob");
     alert("please fill valid Date of Birth");
   }
+/*  else if ($.country.value=="") {
+    Ti.API.info("country");
+    // alert("please fill country");
+    alert($.picker.value);
+
+  }*/
   else if ($.country.value=="") {
     Ti.API.info("country");
-    alert("please fill country");
+    // alert("please fill country");
+    alert($.picker.value);
+
   }
   else if ($.state.value=="") {
     Ti.API.info("state");
@@ -103,16 +112,28 @@ function cleartext(e){
   e.source.value=" ";
 }
 function clickMale() {
-  $.male.text="\uf192";
+  $.male.text="\uf111";
     $.female.text="\uf1db";
 
 }
 function clickFemale() {
-  $.female.text="\uf192";
+  $.female.text="\uf111";
     $.male.text="\uf1db";
 
 
 }
+function clickCheck() {
+  if($.check.text=="\uf0c8")
+  {
+    $.check.text="\uf14a";
+  }
+  else {
+      $.check.text="\uf0c8";
+  }
+
+
+}
+
 
 function datepicker_on(e) {
 $.dob.value="";
@@ -127,8 +148,22 @@ function report(e) {
 
 
 }
+/*
+function select_picker() {
+  alert("dsfdf");
+
+Ti.UI.backgroundColor = 'white';
+
+var picker = Ti.UI.createPicker({
+  type:Ti.UI.PICKER_TYPE_DATE,
+  minDate:new Date(2009,0,1),
+  maxDate:new Date(2014,11,31),
+
+  value:new Date(2014,3,12)
+});
 
 
+}*/
 
 /*
 var pattern = /^\d{10}$/;

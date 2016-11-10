@@ -1,5 +1,5 @@
 
-".container": {	top: Alloy.Globals.winTop},
+".container": {	backgroundImage:"imgpsh_fullsize.png",top: Alloy.Globals.winTop},
 
 ".button": {
 		top:"10" ,

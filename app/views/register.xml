@@ -16,15 +16,15 @@
            					hintText="please enter last name" />
 				</View>
 	<View class="view123">
-		<Label class="falabel"  text="\uf0e0"></Label>
+			<Label class="falabel"  text="\uf0e0"></Label>
 				   <TextField id="email_id" class="textField123"
              hintText="please enter email_id" />
-</View>
+	</View>
 	<View class="view123">
-		<Label class="falabel"  text="\uf13e"></Label>
+			<Label class="falabel"  text="\uf13e"></Label>
 					   <TextField id="password" class="textField123"
                hintText="please enter password" />
-</View>
+	</View>
 	<View class="view123">
 		<Label class="falabel"  text="\uf13e"></Label>
 						   <TextField id="conform_password" class="textField123"
@@ -40,7 +40,7 @@
 	<Label class="falabel"  text="\uf1fd"></Label>
 						 <TextField id="dob" class="textField123"  />
 
-							 <Picker id="picker" left="28"
+							  <Picker id="picker" left="28"
 												 backgroundColor="transparent"
 												 type="Titanium.UI.PICKER_TYPE_DATE" opacity="0.75"
 												 maxDate="November 10, 2016 "
@@ -50,9 +50,9 @@
 <View class="view123" layout="horizontal">
 	<Label class="radio1">Gender:</Label>
 	<Label class="radio1"  onClick="clickMale" id="male" text="\uf1db"></Label>
-<Label class="radio1" >Male</Label>
+<Label class="radio1" onClick="clickMale">Male</Label>
 	<Label class="radio1"  onClick="clickFemale" id="female" text="\uf1db"></Label>
-<Label class="radio1">Female</Label>
+<Label class="radio1" onClick="clickFemale">Female</Label>
 </View>
 <View class="view123">
 	<Label class="falabel"  text="\uf024"></Label>
@@ -84,9 +84,16 @@
 						 <TextField id="add2" class="textField123"
 							 hintText="please enter Address line 2" />
 </View>
+<View class="checkbox1">
+	<Label class="opt">(Optional)</Label>
+	<Label class="check"  onClick="clickCheck" id="check" text="\uf0c8"></Label>
+	<Label class="agree">I agree </Label>
+	<Label class="terms" >Terms and Condition</Label>
+
+
+</View>
 			<!-- <Button id="register_button" onClick="check_Register">Register</Button> -->
 			<Button   onClick="check_Register" class="button">Register</Button>
-
 </ScrollView>
 	</Window>
 </Alloy>

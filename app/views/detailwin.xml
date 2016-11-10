@@ -1,8 +1,5 @@
 <Alloy>
-	<Window class="container" id="win">
-    <Label id="user_name"></Label>
-		<Label id="password"></Label>
-			<Button id="closebtn" onClick="closeme">Close Me</Button>
-
-	</Window>
+    <Window>
+        <Button id="button" onClick="openPopover">Open Popover!</Button>
+    </Window>
 </Alloy>
