@@ -106,39 +106,36 @@ function check_Register(e) {
 
 function dropdown(e) {
 
-
-  Ti.UI.setBackgroundColor('white');
-
+  Ti.UI.backgroundColor = 'white';
   var win = Ti.UI.createWindow({
-    title: 'Click window to test',
-    backgroundColor: 'transperent',
     exitOnClose: true,
-    fullscreen: false
+    layout: 'vertical',
+    height:"500"
+
   });
-  var opts = {
 
-    options: ['Maharashtra', 'Gujrat', 'M.P',
-    'Maharashtra', 'Gujrat', 'M.P',
-    'Maharashtra', 'Gujrat', 'M.P',
-    'Maharashtra', 'Gujrat', 'M.P',
-    'Maharashtra', 'Gujrat', 'M.P',
-    'Maharashtra', 'Gujrat', 'M.P'],
+  var picker = Ti.UI.createPicker({
+    type:Ti.UI.PICKER_TYPE_DATE,
+    minDate:new Date(2009,0,1),
+    maxDate:new Date(2014,11,31),
+    value:new Date(2014,3,12),
 
+    top:50
+  });
+  var cancelButton = Ti.UI.createButton({
+    systemButton: Ti.UI.iOS.SystemButton.CANCEL });
+  win.add(cancelButton);
+  win.add(picker);
 
-    title: 'States'
-  };
-var dialog = Ti.UI.createOptionDialog(opts).show();
-//dialog.addEventListener('click',function(e){
-Ti.API.info(e);
-  Ti.API.info("User selected States: " + e.selectedIndex);
-  win.addEventListener('click',function(e,options){
-    Ti.API.info("ssnasjsnds");
-      Ti.API.info(e);
-      Ti.API.info("Inside listener: " + e.selectedIndex);
-win.close();
-});
   win.open();
 
+  picker.addEventListener('change',function(e){
+    Ti.API.info("User selected date: " + e.value.toLocaleString());
+    var cancelButton = Ti.UI.createButton({
+      systemButton: Ti.UI.iOS.SystemButton.CANCEL });
+      win.add(cancelButton);
+    //  win.close();
+  });
 
 }
 function goto_back() {
