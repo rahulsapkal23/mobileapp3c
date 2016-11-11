@@ -14,6 +14,20 @@ left:"100px",
    height:"40",
    fontWeight: "5"
 }
+
+".dropdown": {
+	font: {
+		fontFamily: 'FontAwesome',
+    height:"48px",
+    width: "48px",
+
+	},
+  left:"330",
+  color:"white"
+
+}
+
+
 ".opt":{
 
 left:"840px",

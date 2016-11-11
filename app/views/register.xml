@@ -63,6 +63,7 @@
 	<Label class="falabel"  text="\uf17a"></Label>
 						 <TextField id="state" class="textField123"
 							 hintText="please enter state" />
+							 <Label class="dropdown" onClick="dropdown" text="\uf150"></Label>
 </View>
 <View class="view123">
 	<Label class="falabel"  text="\uf007"></Label>

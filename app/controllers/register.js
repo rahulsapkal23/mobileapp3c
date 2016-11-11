@@ -104,7 +104,43 @@ function check_Register(e) {
 
   */
 
+function dropdown(e) {
 
+
+  Ti.UI.setBackgroundColor('white');
+
+  var win = Ti.UI.createWindow({
+    title: 'Click window to test',
+    backgroundColor: 'transperent',
+    exitOnClose: true,
+    fullscreen: false
+  });
+  var opts = {
+
+    options: ['Maharashtra', 'Gujrat', 'M.P',
+    'Maharashtra', 'Gujrat', 'M.P',
+    'Maharashtra', 'Gujrat', 'M.P',
+    'Maharashtra', 'Gujrat', 'M.P',
+    'Maharashtra', 'Gujrat', 'M.P',
+    'Maharashtra', 'Gujrat', 'M.P'],
+
+
+    title: 'States'
+  };
+var dialog = Ti.UI.createOptionDialog(opts).show();
+//dialog.addEventListener('click',function(e){
+Ti.API.info(e);
+  Ti.API.info("User selected States: " + e.selectedIndex);
+  win.addEventListener('click',function(e,options){
+    Ti.API.info("ssnasjsnds");
+      Ti.API.info(e);
+      Ti.API.info("Inside listener: " + e.selectedIndex);
+win.close();
+});
+  win.open();
+
+
+}
 function goto_back() {
    $.win.close();
 }

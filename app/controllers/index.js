@@ -15,6 +15,6 @@ function report(e) {
     Ti.API.info('User selected: ' + e.value);
 }
 
-
+   
 
 $.index.open();
