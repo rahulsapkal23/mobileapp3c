@@ -63,8 +63,16 @@
 	<Label class="falabel"  text="\uf17a"></Label>
 						 <TextField id="state" class="textField123"
 							 hintText="please enter state" />
-							 <Label class="dropdown" onClick="dropdown" text="\uf150"></Label>
-</View>
+							 <Label class="dropdown" onClick="dropdown1" text="\uf150"></Label>
+</View><OptionDialog id="dialog" title="Delete File?">
+
+
+            <Options id="opts">
+                <Option ></Option>
+
+            </Options>
+
+        </OptionDialog>
 <View class="view123">
 	<Label class="falabel"  text="\uf007"></Label>
 						 <TextField id="city" class="textField123"
