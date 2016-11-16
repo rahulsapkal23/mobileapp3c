@@ -64,7 +64,14 @@ function check_Register(e) {
     alert("Phone No must be 10 digits");
 
   }
-  else if ($.picker.value=="2016-11-09 18:30:00 +0000") {
+  else   if ($.dob.text=="Select Date of Birth") {
+    $.viewfirst_name.backgroundColor="transprent";
+    $.viewlast_name.backgroundColor="transprent";
+      $.viewemail_id.backgroundColor="transprent";
+      $.viewpassword.backgroundColor="transprent";
+      $.viewconform_password.backgroundColor="transprent";
+      $.viewphone_no.backgroundColor="transprent";
+        $.viewdob.backgroundColor="blue";
     Ti.API.info("dob");
     alert("please fill valid Date of Birth");
   }
@@ -80,7 +87,7 @@ else if ($.male.text=="\uf1db" && $.female.text=="\uf1db") {
    alert("please Select Gender");
 
 }
-  else if ($.country.value=="") {
+  else if ($.country.text=="Select Country") {
     $.viewfirst_name.backgroundColor="transprent";
     $.viewlast_name.backgroundColor="transprent";
       $.viewemail_id.backgroundColor="transprent";
@@ -92,7 +99,7 @@ else if ($.male.text=="\uf1db" && $.female.text=="\uf1db") {
      alert("please fill country");
 
   }
-  else if ($.state.value=="") {
+  else if ($.state.text=="Select State") {
     $.viewfirst_name.backgroundColor="transprent";
     $.viewlast_name.backgroundColor="transprent";
       $.viewemail_id.backgroundColor="transprent";
@@ -104,7 +111,7 @@ else if ($.male.text=="\uf1db" && $.female.text=="\uf1db") {
       $.viewstate.backgroundColor="blue";
     alert("please fill state");
   }
-  else if ($.city.value=="") {
+  else if ($.city.text=="Select City") {
     $.viewfirst_name.backgroundColor="transprent";
     $.viewlast_name.backgroundColor="transprent";
       $.viewemail_id.backgroundColor="transprent";
@@ -268,21 +275,43 @@ var win = Ti.UI.createWindow({
   exitOnClose: true,
   layout: 'vertical'
 });
-
+var view = Titanium.UI.createView({
+   borderRadius:10,
+   backgroundColor:'white',
+   width:500,
+   height:500
+});
+win.add(view);
 var picker = Ti.UI.createPicker({
   type:Ti.UI.PICKER_TYPE_DATE,
-  minDate:new Date(2009,0,1),
-  maxDate:new Date(2014,11,31),
-  value:new Date(2014,3,12),
+  minDate:new Date(1971,0,1),
+  maxDate:new Date(2016,10,16),
+  value:new Date(2016,10,16),
   top:50
 });
+var button = Titanium.UI.createButton({
+   title: 'Set',
+   top: 300,
+   width: 100,
+   height: 50,
+   backgroundColor:"pink"
+});
+button.addEventListener('click',function(e)
+{
+   Titanium.API.info("You clicked the button");
+   var date=picker.value;
+   var bMon=date.getMonth()+1;
+   var bdate=date.getDate();
+   var byear=date.getFullYear();
+   $.dob.text=bdate+"/"+bMon+"/"+byear;
+     win.close();
+});
+view.add(picker);
+view.add(button);
 
-win.add(picker);
 win.open();
 
-picker.addEventListener('change',function(e){
-  Ti.API.info("User selected date: " + e.value.toLocaleString());
-});
+
 }
      function dropdowncountry(e)
      {
