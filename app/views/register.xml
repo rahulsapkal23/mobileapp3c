@@ -56,7 +56,7 @@
 </View>
 <View class="view123">
 	<Label class="falabel"  text="\uf024"></Label>
-						 <TextField id="country" class="textField123"
+						 <TextField id="country" class="textField123" editable="false"
 							 hintText="please enter country" />
 							  <Label class="dropdown" onClick="dropdowncountry" text="\uf150"></Label>
 </View>
@@ -64,7 +64,7 @@
       <Options id="countryopts"> <Option ></Option>  </Options>  </OptionDialog>
 <View class="view123">
 	<Label class="falabel"  text="\uf17a"></Label>
-						 <TextField id="state" class="textField123"
+						 <TextField id="state" class="textField123" editable="false"
 							 hintText="please enter state" />
 							 <Label class="dropdown" onClick="dropdownstate" text="\uf150"></Label>
 </View>
@@ -72,12 +72,12 @@
       <Options id="stateopts"> <Option ></Option>  </Options>  </OptionDialog>
 <View class="view123">
 	<Label class="falabel"  text="\uf007"></Label>
-						 <TextField id="city" class="textField123"
+						 <TextField id="city" class="textField123" editable="false"
 							 hintText="please enter city" />
 							  <Label class="dropdown" onClick="dropdowncity" text="\uf150"></Label>
 </View>
-<OptionDialog id="statedialog" title="Select state">
-      <Options id="stateopts"> <Option ></Option>  </Options>  </OptionDialog>
+<OptionDialog id="citydialog" title="Select state">
+      <Options id="cityopts"> <Option ></Option>  </Options>  </OptionDialog>
 <View class="view123">
 	<Label class="falabel"  text="\uf292"></Label>
 						 <TextField id="zipcode" class="textField123"
