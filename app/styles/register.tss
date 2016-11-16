@@ -3,7 +3,8 @@
 //showVerticalScrollIndicator:true,
 //scrollable :true,
 //DEFAULT : "10",
-	top: Alloy.Globals.winTop},
+	top: Alloy.Globals.winTop,
+	bottom: 10},
 
 
 ".view123":{
@@ -15,17 +16,33 @@ left:"100px",
    fontWeight: "5"
 }
 
+".error":{
+	backgroundColor: "blue",
+	borderColor:"white" ,
+	left:"100px",
+	 top:"40px",
+	  right:"100px",
+	   height:"40",
+	   fontWeight: "5"
+}
+
+
 ".dropdown": {
 	font: {
 		fontFamily: 'FontAwesome',
     height:"48px",
     width: "48px",
-
 	},
   left:"330",
   color:"white"
 
 }
+/*".country123": {
+
+textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  color:"white"
+
+}*/
 
 
 ".opt":{
@@ -43,7 +60,7 @@ top: "0",
 
 }
 ".checkbox1":{
-borderColor:"white" ,
+
 left:"100px",
 
   right:"100px",
@@ -65,7 +82,7 @@ left:"100px",
 }
 
 ".viewhead":{
-borderColor:"black" ,
+borderColor:"white" ,
  top:"40px",
    height:"40",
 

@@ -5,6 +5,7 @@
 		</View>
 		<Button   onClick="openLogin" class="button">Login</Button>
 		<Button   onClick="openRegister" class="button">Register</Button>
+		
 		<OptionDialog id="dialog" title="Delete File?">
 
 				<!-- The Options tag sets the options property. -->
